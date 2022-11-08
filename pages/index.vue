@@ -1,34 +1,30 @@
 <template>
   <div class="landing-page">
-    <v-row class="flex section-1 ma-0">
-      <v-col cols="12" md="6" class="p-80 display-flex">
-        <v-card
-          class="
-            pa-10
-            card-background
-            align-self-center
-            display-transation
-            from-bottom
-          "
-        >
-          <v-card-title class="font-weight-bold text-dp-lg">
-            The Key to A<br />Decentralized World
-          </v-card-title>
-          <v-card-text>
-            <p class="text-xl">
+    <div class="section-1"></div>
+    <div class="section-1-content">
+      <v-row class="horizontal-center ma-0">
+        <v-col cols="12" md="6" class="d-flex pr-11">
+          <div class="align-self-center display-transation from-bottom">
+            <div class="font-weight-bold text-dp-xxl">
+              The Key to A<br />Decentralized World
+            </div>
+            <p class="text-dp-xs pt-4">
               The fastest and easiest way to build your own DAO without coding.
               It’s time to give the power back to the community.
             </p>
-          </v-card-text>
-          <v-card-actions>
-            <v-btn color="majorelleBlue" nuxt to="/inspire">
-              Connect Wallet
-            </v-btn>
-            <v-btn color="gray11" nuxt to="/inspire"> Watch Tutorial </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-    </v-row>
+            <div class="pt-8">
+              <v-btn color="majorelleBlue" nuxt to="/inspire">
+                Connect Wallet
+              </v-btn>
+              <v-btn color="gray11" nuxt to="/inspire"> Watch Tutorial </v-btn>
+            </div>
+          </div>
+        </v-col>
+        <v-col cols="12" md="6">
+          <img class="full-width display-transation from-top" src="@/assets/Coins.png" />
+        </v-col>
+      </v-row>
+    </div>
     <div class="partner-block py-16">
       <div class="font-weight-bold text-dp-lg text-center">Our partner</div>
       <div class="-ml-88 relative inline-flex justify-center pt-16">
@@ -375,14 +371,20 @@
           Frequently asked questions
         </div>
         <div class="mt-12">
-          <div
-            class="display-transation from-bottom close"
-          >
+          <div class="display-transation from-bottom close">
             <div class="font-weight-regular text-dp-xs">
-              <v-icon v-if="isOpenQ1" color="paradisePink" class="mr-1" @click="clickQuestion1(false)"
+              <v-icon
+                v-if="isOpenQ1"
+                color="paradisePink"
+                class="mr-1"
+                @click="clickQuestion1(false)"
                 >mdi-minus-circle-outline</v-icon
               >
-              <v-icon v-else color="blueJeans" class="mr-1" @click="clickQuestion1(true)"
+              <v-icon
+                v-else
+                color="blueJeans"
+                class="mr-1"
+                @click="clickQuestion1(true)"
                 >mdi-plus-circle-outline</v-icon
               >
               What is logoipsum and how does it work?
@@ -399,10 +401,18 @@
           </div>
           <div class="mt-6 display-transation from-bottom">
             <div class="font-weight-regular text-dp-xs">
-              <v-icon v-if="isOpenQ2" color="paradisePink" class="mr-1" @click="clickQuestion2(false)"
+              <v-icon
+                v-if="isOpenQ2"
+                color="paradisePink"
+                class="mr-1"
+                @click="clickQuestion2(false)"
                 >mdi-minus-circle-outline</v-icon
               >
-              <v-icon v-else color="blueJeans" class="mr-1" @click="clickQuestion2(true)"
+              <v-icon
+                v-else
+                color="blueJeans"
+                class="mr-1"
+                @click="clickQuestion2(true)"
                 >mdi-plus-circle-outline</v-icon
               >
               What do I need to start using logoipsum?
@@ -419,10 +429,18 @@
           </div>
           <div class="mt-6 display-transation from-bottom">
             <div class="font-weight-regular text-dp-xs">
-              <v-icon v-if="isOpenQ3" color="paradisePink" class="mr-1" @click="clickQuestion3(false)"
+              <v-icon
+                v-if="isOpenQ3"
+                color="paradisePink"
+                class="mr-1"
+                @click="clickQuestion3(false)"
                 >mdi-minus-circle-outline</v-icon
               >
-              <v-icon v-else color="blueJeans" class="mr-1" @click="clickQuestion3(true)"
+              <v-icon
+                v-else
+                color="blueJeans"
+                class="mr-1"
+                @click="clickQuestion3(true)"
                 >mdi-plus-circle-outline</v-icon
               >
               Do I need coding knowledge to use logoipsum?
@@ -439,10 +457,18 @@
           </div>
           <div class="mt-6 display-transation from-bottom">
             <div class="font-weight-regular text-dp-xs">
-              <v-icon v-if="isOpenQ4" color="paradisePink" class="mr-1" @click="clickQuestion4(false)"
+              <v-icon
+                v-if="isOpenQ4"
+                color="paradisePink"
+                class="mr-1"
+                @click="clickQuestion4(false)"
                 >mdi-minus-circle-outline</v-icon
               >
-              <v-icon v-else color="blueJeans" class="mr-1" @click="clickQuestion4(true)"
+              <v-icon
+                v-else
+                color="blueJeans"
+                class="mr-1"
+                @click="clickQuestion4(true)"
                 >mdi-plus-circle-outline</v-icon
               >
               How much does logoipsum cost?
@@ -459,15 +485,26 @@
           </div>
           <div class="mt-6 display-transation from-bottom">
             <div class="font-weight-regular text-dp-xs">
-              <v-icon v-if="isOpenQ5" color="paradisePink" class="mr-1" @click="clickQuestion5(false)"
+              <v-icon
+                v-if="isOpenQ5"
+                color="paradisePink"
+                class="mr-1"
+                @click="clickQuestion5(false)"
                 >mdi-minus-circle-outline</v-icon
               >
-              <v-icon v-else color="blueJeans" class="mr-1" @click="clickQuestion5(true)"
+              <v-icon
+                v-else
+                color="blueJeans"
+                class="mr-1"
+                @click="clickQuestion5(true)"
                 >mdi-plus-circle-outline</v-icon
               >
               Does logoipsum provide custom feature development?
             </div>
-            <div v-if="isOpenQ5" class="gray5--text font-weight-regular text-lg mt-2">
+            <div
+              v-if="isOpenQ5"
+              class="gray5--text font-weight-regular text-lg mt-2"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames
               mattis nam eu et. Sed arcu molestie ut morbi. In nunc egestas
               ipsum accumsan lacus est dictum at. Euismod eget augue porttitor
@@ -674,21 +711,21 @@ export default {
   },
   methods: {
     clickQuestion1(isOpen) {
-      this.isOpenQ1 = isOpen;
+      this.isOpenQ1 = isOpen
     },
     clickQuestion2(isOpen) {
-      this.isOpenQ2 = isOpen;
+      this.isOpenQ2 = isOpen
     },
     clickQuestion3(isOpen) {
-      this.isOpenQ3 = isOpen;
+      this.isOpenQ3 = isOpen
     },
     clickQuestion4(isOpen) {
-      this.isOpenQ4 = isOpen;
+      this.isOpenQ4 = isOpen
     },
     clickQuestion5(isOpen) {
-      this.isOpenQ5 = isOpen;
-    }
-  }
+      this.isOpenQ5 = isOpen
+    },
+  },
 }
 </script>
 <style>
@@ -702,11 +739,15 @@ export default {
 }
 .from-bottom.show {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
-.display-transation.show {
+.from-top {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.from-top.show {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 /* animation end */
 body {
@@ -729,15 +770,27 @@ body::-webkit-scrollbar {
 }
 .section-1 {
   background: url('@/assets/landing_background.png');
+  filter: blur(6px);
   background-size: cover;
   min-height: calc(100vh - 64px) !important;
+  width: 100vw;
+  position: relative;
 }
-.card-background {
-  background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(12px) !important;
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 16px !important;
-  min-height: 440px;
+.section-1-content {
+  position: absolute;
+  padding-left: 156px;
+  padding-right: 136px;
+  max-width: 1440px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 0;
+  width: 100%;
+  height: 100%;
+}
+.horizontal-center {
+  top: 50%;
+  transform: translate(0, calc(50% + 64px));
 }
 .partner-block {
   overflow: hidden;

@@ -1,6 +1,6 @@
 // animation
 const tranactionItems = document.getElementsByClassName("display-transation");
-const triggerBottom = (window.innerHeight / 5) * 4;
+const triggerBottom = (window.innerHeight / 14) * 13;
 var timer;
 window.onload = (event) => {
   callDisplayTransaction(tranactionItems);
