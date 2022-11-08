@@ -13,7 +13,7 @@
                 coding. It’s time to give the power back to the community.
               </p>
               <div class="pt-8">
-                <v-btn color="majorelleBlue" nuxt to="/inspire">
+                <v-btn color="majorelleBlue" nuxt class="text-capitalize">
                   Watch Tutorial
                 </v-btn>
               </div>
@@ -28,9 +28,9 @@
         </v-row>
       </div>
     </div>
-    <div class="partner-block py-16">
+    <div class="partner-block pt-74">
       <div class="font-weight-bold text-dp-lg text-center">Our partner</div>
-      <div class="-ml-88 relative inline-flex justify-center pt-16">
+      <div class="-ml-88 relative inline-flex justify-center pt-12">
         <div class="partner-item px-10 py-8 right-to-left-1">
           <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
         </div>
@@ -89,13 +89,13 @@
         </div>
       </div>
     </div>
-    <div id="section-3" class="section-3">
+    <div id="section-3" class="section-3 pt-160">
       <div class="max-width-1440 ma-auto">
-        <div class="pa-10">
+        <div class="px-10">
           <div class="font-weight-bold text-dp-lg text-center">
             Manage Digital Assets Made Easy
           </div>
-          <v-row class="my-16">
+          <v-row class="mt-16">
             <v-col cols="4" class="section-3-slide">
               <div class="process-bar">
                 <div class="complete-bar"></div>
@@ -153,11 +153,11 @@
             </v-col>
           </v-row>
         </div>
-        <div class="py-190 ma-auto">
-          <div class="font-weight-bold text-dp-lg text-center pt-16">
+        <div class="pt-225 ma-auto">
+          <div class="font-weight-bold text-dp-lg text-center">
             We help you save
           </div>
-          <v-row class="mt-16">
+          <v-row class="px-190 mt-12">
             <v-col cols="4" class="px-8">
               <div
                 class="
@@ -226,8 +226,8 @@
         </div>
       </div>
     </div>
-    <div class="section-4 pt-16">
-      <div class="max-width-1440 ma-auto p-80">
+    <div class="section-4 pt-156">
+      <div class="max-width-1440 ma-auto px-80">
         <div class="font-weight-bold text-dp-lg text-center">
           Featured blogposts
         </div>
@@ -369,7 +369,7 @@
           </v-btn>
         </div>
       </div>
-      <div class="max-width-1440 ma-auto p-80">
+      <div class="max-width-1440 ma-auto px-80 py-136">
         <div class="font-weight-bold text-dp-lg text-center">
           Frequently asked questions
         </div>
@@ -538,7 +538,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Build DAO</a
                   >
                 </template>
@@ -548,7 +548,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Sell NFT</a
                   >
                 </template>
@@ -558,7 +558,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Buy Store</a
                   >
                 </template>
@@ -571,7 +571,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Customization</a
                   >
                 </template>
@@ -581,7 +581,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Concierge</a
                   >
                 </template>
@@ -594,7 +594,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >About Us</a
                   >
                 </template>
@@ -604,7 +604,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Whitepaper</a
                   >
                 </template>
@@ -614,7 +614,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Token</a
                   >
                 </template>
@@ -624,7 +624,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Template</a
                   >
                 </template>
@@ -637,7 +637,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Help Center</a
                   >
                 </template>
@@ -647,7 +647,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Video Tutorials</a
                   >
                 </template>
@@ -657,7 +657,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Blog</a
                   >
                 </template>
@@ -667,7 +667,7 @@
             <div class="mt-4">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <a to="#" v-bind="attrs" v-on="on" class="gray5--text"
+                  <a aria-disabled="true" v-bind="attrs" v-on="on" class="gray5--text"
                     >Contact Support</a
                   >
                 </template>
@@ -898,7 +898,7 @@ body::-webkit-scrollbar {
   background: url('@/assets/backgroud-color-2.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top 450px left -660px;
+  background-position: top 620px left -460px;
 }
 .process-bar {
   width: 100%;
@@ -1118,11 +1118,27 @@ body::-webkit-scrollbar {
 .p-80 {
   padding: 80px;
 }
+.pt-74 {
+  padding-top: 74px;
+}
 .pt-130 {
   padding-top: 130px;
 }
-.py-190 {
+.pt-156 {
+  padding-top: 156px;
+}
+.pt-160 {
+  padding-top: 160px;
+}
+.pt-225 {
+  padding-top: 225px;
+}
+.px-190 {
   padding-left: 190px;
   padding-right: 190px;
+}
+.py-136 {
+  padding-top: 136px;
+  padding-bottom: 136px;
 }
 </style>

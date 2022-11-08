@@ -30,19 +30,25 @@
           >
             <div class="text-none">Home</div>
           </div>
-          <router-link
-            to="/service"
-            class="
-              white--text
-              text-decoration-none
-              cursor-pointer
-              px-2
-              align-self-center
-            "
-            active-class="active"
-          >
-            <div class="text-none">Service</div>
-          </router-link>
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <div
+                v-bind="attrs"
+                v-on="on"
+                class="
+                  white--text
+                  text-decoration-none
+                  cursor-pointer
+                  px-2
+                  align-self-center
+                "
+                active-class="active"
+              >
+                <div class="text-none">Service</div>
+              </div>
+            </template>
+            <span>Coming Soon</span>
+          </v-tooltip>
           <v-tooltip bottom>
             <template v-slot:activator="{ on, attrs }">
               <div
