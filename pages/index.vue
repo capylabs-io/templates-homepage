@@ -1,29 +1,32 @@
 <template>
   <div class="landing-page">
-    <div class="section-1"></div>
-    <div class="section-1-content">
-      <v-row class="horizontal-center ma-0">
-        <v-col cols="12" md="6" class="d-flex pr-11">
-          <div class="align-self-center display-transation from-bottom">
-            <div class="font-weight-bold text-dp-xxl">
-              The Key to A<br />Decentralized World
+    <div class="section-1 d-flex justify-center">
+      <div class="section-1-content ma-auto">
+        <v-row class="ma-0">
+          <v-col cols="12" md="6" class="d-flex pr-11">
+            <div class="align-self-center display-transation from-bottom">
+              <div class="font-weight-bold text-dp-xxl">
+                The Key to A<br />Decentralized World
+              </div>
+              <p class="text-dp-xs pt-4">
+                The fastest and easiest way to build your own DAO without
+                coding. It’s time to give the power back to the community.
+              </p>
+              <div class="pt-8">
+                <v-btn color="majorelleBlue" nuxt to="/inspire">
+                  Watch Tutorial
+                </v-btn>
+              </div>
             </div>
-            <p class="text-dp-xs pt-4">
-              The fastest and easiest way to build your own DAO without coding.
-              It’s time to give the power back to the community.
-            </p>
-            <div class="pt-8">
-              <v-btn color="majorelleBlue" nuxt to="/inspire">
-                Connect Wallet
-              </v-btn>
-              <v-btn color="gray11" nuxt to="/inspire"> Watch Tutorial </v-btn>
-            </div>
-          </div>
-        </v-col>
-        <v-col cols="12" md="6">
-          <img class="full-width display-transation from-top" src="@/assets/Coins.png" />
-        </v-col>
-      </v-row>
+          </v-col>
+          <v-col cols="12" md="6">
+            <img
+              class="full-width display-transation from-top"
+              src="@/assets/Coins.png"
+            />
+          </v-col>
+        </v-row>
+      </div>
     </div>
     <div class="partner-block py-16">
       <div class="font-weight-bold text-dp-lg text-center">Our partner</div>
@@ -769,28 +772,25 @@ body::-webkit-scrollbar {
   width: 100vw;
 }
 .section-1 {
-  background: url('@/assets/landing_background.png');
-  filter: blur(6px);
-  background-size: cover;
-  min-height: calc(100vh - 64px) !important;
+  min-height: calc(100vh - 56px) !important;
   width: 100vw;
   position: relative;
 }
 .section-1-content {
-  position: absolute;
   padding-left: 156px;
   padding-right: 136px;
   max-width: 1440px;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  height: 0;
-  width: 100%;
-  height: 100%;
 }
-.horizontal-center {
-  top: 50%;
-  transform: translate(0, calc(50% + 64px));
+.section-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('@/assets/landing_background.png');
+  filter: blur(6px);
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
 }
 .partner-block {
   overflow: hidden;
