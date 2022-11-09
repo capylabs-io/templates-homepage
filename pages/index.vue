@@ -58,8 +58,32 @@
         <div class="partner-item px-10 py-8 right-to-left-1">
           <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
         </div>
+        <div class="partner-item px-10 py-8 right-to-left-1">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
+        <div class="partner-item px-10 py-8 right-to-left-1">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
+        <div class="partner-item px-10 py-8 right-to-left-1">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
+        <div class="partner-item px-10 py-8 right-to-left-1">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
       </div>
       <div class="relative inline-flex mt-5 justify-center pt-130">
+        <div class="partner-item px-10 py-8 left-to-right-2">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
+        <div class="partner-item px-10 py-8 left-to-right-2">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
+        <div class="partner-item px-10 py-8 left-to-right-2">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
+        <div class="partner-item px-10 py-8 left-to-right-2">
+          <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
+        </div>
         <div class="partner-item px-10 py-8 left-to-right-2">
           <img loading="lazy" class="full-width" src="@/assets/logo-svc.png" />
         </div>
@@ -96,7 +120,7 @@
             Manage Digital Assets Made Easy
           </div>
           <v-row class="mt-16">
-            <v-col cols="4" class="section-3-slide">
+            <v-col cols="4" class="section-3-slide gray5--text">
               <div class="process-bar">
                 <div class="complete-bar"></div>
               </div>
@@ -114,7 +138,7 @@
                 />
               </div>
             </v-col>
-            <v-col cols="4" class="section-3-slide">
+            <v-col cols="4" class="section-3-slide gray5--text">
               <div class="process-bar">
                 <div class="complete-bar"></div>
               </div>
@@ -132,7 +156,7 @@
                 />
               </div>
             </v-col>
-            <v-col cols="4" class="section-3-slide">
+            <v-col cols="4" class="section-3-slide gray5--text">
               <div class="process-bar">
                 <div class="complete-bar"></div>
               </div>
@@ -819,25 +843,25 @@ body::-webkit-scrollbar {
   right: -230px;
 }
 .left-to-right-2 {
-  animation: left-to-right-2 27s linear infinite;
+  animation: left-to-right-2 39s linear infinite;
 }
 .right-to-left-1 {
-  animation: right-to-left-1 27s linear infinite;
+  animation: right-to-left-1 39s linear infinite;
 }
 @keyframes right-to-left-1 {
   0% {
-    right: -192px;
+    right: -202px;
   }
   100% {
-    right: 1920px;
+    right: 2660px;
   }
 }
 @keyframes left-to-right-2 {
   0% {
-    left: -192px;
+    left: -202px;
   }
   100% {
-    left: 1920px;
+    left: 2660px;
   }
 }
 .partner-item:nth-child(1) {
@@ -868,31 +892,55 @@ body::-webkit-scrollbar {
   animation-delay: 27s;
 }
 .partner-item:nth-child(10) {
-  animation-delay: 3s;
+  animation-delay: 30s;
 }
 .partner-item:nth-child(11) {
-  animation-delay: 6s;
+  animation-delay: 33s;
 }
 .partner-item:nth-child(12) {
-  animation-delay: 9s;
+  animation-delay: 36s;
 }
 .partner-item:nth-child(13) {
-  animation-delay: 12s;
+  animation-delay: 39s;
 }
 .partner-item:nth-child(14) {
-  animation-delay: 15s;
+  animation-delay: 3s;
 }
 .partner-item:nth-child(15) {
-  animation-delay: 18s;
+  animation-delay: 6s;
 }
 .partner-item:nth-child(16) {
-  animation-delay: 21s;
+  animation-delay: 9s;
 }
 .partner-item:nth-child(17) {
-  animation-delay: 24s;
+  animation-delay: 12s;
 }
 .partner-item:nth-child(18) {
+  animation-delay: 15s;
+}
+.partner-item:nth-child(19) {
+  animation-delay: 18s;
+}
+.partner-item:nth-child(20) {
+  animation-delay: 21s;
+}
+.partner-item:nth-child(21) {
+  animation-delay: 24s;
+}
+.partner-item:nth-child(22) {
   animation-delay: 27s;
+}
+.partner-item:nth-child(23) {
+  animation-delay: 30s;
+}
+.partner-item:nth-child(24) {
+  animation-delay: 33s;
+}
+.partner-item:nth-child(25) {
+  animation-delay: 36s;
+}
+.partner-item:nth-child(26) {
+  animation-delay: 39s;
 }
 .section-3 {
   background: url('@/assets/backgroud-color-2.png');
@@ -926,12 +974,7 @@ body::-webkit-scrollbar {
   animation-timing-function: ease;
 }
 .section-3-slide.active {
-  /* Grey/05 */
   color: #fff !important;
-}
-.section-3-slide.active {
-  /* Grey/05 */
-  color: #b5b5ba !important;
 }
 .section-3-slide img {
   animation: tran-opacity-reverse 1s forwards;
