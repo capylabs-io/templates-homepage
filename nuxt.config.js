@@ -13,7 +13,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: '/js.js' }
+      { src: '/js.js' },
+      { src: '/particles.js'},
+      { src: '/app.js'}
   ]
   },
 

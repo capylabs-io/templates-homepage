@@ -1,6 +1,7 @@
 <template>
   <div class="landing-page">
     <div class="section-1 d-flex justify-center">
+      <div id="particles-js"></div>
       <div class="section-1-content ma-auto">
         <v-row class="ma-0">
           <v-col cols="12" md="6" class="d-flex pr-11">
@@ -813,6 +814,13 @@ body::-webkit-scrollbar {
   background: url('@/assets/landing_background.png');
   filter: blur(6px);
   background-size: cover;
+  width: 100vw;
+  height: 100%;
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100%;
 }
